@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <section class="container mt-4">
+        <h1>{{ post.title }}</h1>
+        <div class="card mb-4">
+            <div class="card-body">
+                <p class="card-text text-muted mb-2">{{ post.date }}</p>
+                <p class="card-text mb-4">{{ post.body }}</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
