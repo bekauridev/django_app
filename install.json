@@ -1,0 +1,33 @@
+{
+    "python create virtual environment": {
+        "ubuntu": "python3 -m venv .venv",
+        "windows":"py -m venv .venv"
+    },
+    "python activate virtual environment": {
+        "ubuntu": "source .venv/bin/activate",
+        "windows": ".venv/Scripts/activate"
+    },
+    "python Deactivate virtual environment":"deactivate",
+    "Install Django Web Full Stack Framework": "pip install Django",
+    "Create Web Project From django-admin": "django-admin startproject app",
+    "Change Directory": "cd ./app",
+    "Run Django Web server": {
+        "ubuntu": "python3 manage.py runserver",
+        "windows": "python manage.py runserver"
+    },
+    "Create App Using manage.py": {
+        "ubuntu": "python3 manage.py startapp products_dashboard",
+        "windows": "python manage.py startapp products_dashboard"
+    },
+    "Manage.py Commands List": {
+        "ubuntu":"python3 manage.py",
+        "windows":"python manage.py"
+    },
+    "dependencies": [
+        "pip install django-crispy-forms",
+        "pip install crispy-bootstrap5 2024.2"
+    ],
+    "pip Commands": {
+        "Show All installed Packages": "pip list"
+    }
+}

@@ -14,17 +14,22 @@
     </title>
 </head>
 <body>
-    <nav>
+    <nav >
          <a href="/">
-            home  <span role="img" aria-label="home">🏠</span>
+            <span role="img" aria-label="home" title="home">🏠</span>
          </a> |
          <a href="/about">
-            About  <span role="img" aria-label="about">👀</span> 
+            <span role="img" aria-label="about" title="about">👀</span> 
          </a> |
          <a href="{% url 'posts:list' %}">
-            Posts  <span role="img" aria-label="posts">📰</span> 
+            <span role="img" aria-label="posts" title="posts">📰</span> 
+         </a>|
+         <a href="{% url 'users:register' %}">
+            <span role="img" aria-label="Register user" title="Register user">👨🏻‍💼</span> 
+         </a>|
+         <a href="{% url 'users:login' %}">
+            <span role="img" aria-label="Register Login" title="Login user">🔐</span> 
          </a>
-            
     </nav>
     <main>
         {% block content %}
