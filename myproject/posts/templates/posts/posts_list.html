@@ -17,7 +17,7 @@
                             <h5 class="card-title">
                                 <a href="{% url 'posts:page' slug=post.slug %}">{{ post.title }}</a>
                             </h5>
-                            <p class="card-text">{{ post.date }}</p>
+                            <p class="card-text">{{ post.date }} by {{post.author}}</p>
                             <p class="card-text">{{ post.body }} </p>
                             <a href="{% url 'posts:page' slug=post.slug %}" class="btn btn-primary">Read More</a>
                         </div>
